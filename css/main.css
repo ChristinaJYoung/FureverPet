@@ -1,0 +1,68 @@
+body {
+	margin-left: 15px;
+	/*font-family: Arial;*/
+	/*color: #3333ff;*/
+	width: 10%;
+	height: 100%
+}
+
+#splashPage {
+  width:80vw;
+  margin: 2em auto;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  background: url(images/aspen.jpg);
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  background-position: center;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#title {
+  margin: 2em 0 0 0;
+  position: relative;
+  color: purple;
+  animation-name: title;
+  animation-duration: 7s;
+}
+
+#quote {
+  margin: 2em 0 0 0;
+  position: relative;
+  color: purple;
+  animation-name: quote;
+  animation-duration: 8s;
+}
+
+#link {
+    margin: 2em 0 0 0;
+    position: relative;
+    color: purple;
+    animation-name: slideIn;
+    animation-duration: 6s;
+}
+
+@keyframes title {
+  from {transform: translateY(-50em);}
+  to{(transform: translateY(0);)}
+}
+
+@keyframes quote {
+  from {transform: translateX(-50em);}
+  to{(transform: translateX(0);)}
+}
+@keyframes slideIn {
+  from {transform: translateX(120em);}
+  to{(transform: translateX(0);)}
+}
