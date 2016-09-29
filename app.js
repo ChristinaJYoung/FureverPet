@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-  console.log('HELLO')
+  let dropDown = $('#dropdown');
+  let dals = $('#dalmations');
+  let shepherds = $('#germanShepherds');
 
   $('#titleExceptSplash').hide();
   $('.navigation').hide();
@@ -30,6 +32,33 @@ $(document).ready(function () {
     $('.navigation').show();
     $('#home').hide();
     $('#splashPage').hide();
+  })
+
+  $('select').change(function () {
+    console.log(this.value)
+    if (this.value == 'All Breeds') {
+      console.log('HELLO')
+      $('#dalmations').show();
+      $('#germanSheps').show();
+      $('#greatDanes').show();
+    } else if (this.value == 'Dalmations') {
+      $('#dalmations').show();
+      $('#germanSheps').hide();
+      $('#greatDanes').hide();
+    } else if (this.value == 'German Shepherds') {
+      $('#germanSheps').show();
+      $('#dalmations').hide();
+      $('#greatDanes').hide();
+    } else if (this.value == 'Great Danes') {
+      $('#greatDanes').show();
+      $('#germanSheps').hide();
+      $('#dalmations').hide();
+    } else {
+      $('#greatDanes').hide();
+      $('#germanSheps').hide();
+      $('#dalmations').hide();
+
+    }
   })
 
 })

@@ -2,7 +2,8 @@ body {
 	margin-left: 15px;
 	font-family: Arial;
 	width: 98%;
-	height: 100%
+	height: 100%;
+	/*background-color: #3B3131;*/
 }
 
 h1 {
@@ -10,9 +11,11 @@ h1 {
   font-size: 50px;
 }
 
-.col-sm-4 {
+.col-md-4 {
 	margin-top: 20px;
 }
+
+/*Navigation bar*/
 
 #navBar {
 	margin: 20px 0 20px 0;
@@ -47,15 +50,60 @@ h1 {
   animation-duration: 1s;
 }
 
+/*Dalmation Animations Fade in sequentially*/
+
+#fade-in1 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  animation-duration: 1s;
+}
+
+#fade-in2 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+
+#fade-in3 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+  animation-duration: 1s;
+}
+
+#fade-in4 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 1.6s;
+  animation-duration: 1s;
+}
+
+#fade-in5 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 2.0s;
+  animation-duration: 1s;
+}
+
 #home select {
   margin-top: 5px;
   margin-left: 50px;
 }
 
-.navigation{
-	float: right;
-}
 
+/*Typing Animation*/
 .testing{
   font-family: "Courier";
   font-size: 20px;
