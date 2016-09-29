@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ChristinaJYoung/FureverPet/issues"
   },
-  "homepage": "https://github.com/ChristinaJYoung/FureverPet#readme"
+  "homepage": "https://github.com/ChristinaJYoung/FureverPet#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }

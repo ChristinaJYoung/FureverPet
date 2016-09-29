@@ -3,26 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Furever Pets</title>
-    <link src="./node_modules/bootstrap/dist/css/bootstrap.css"></script>
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body class="bkgndImage">
-    <h1 id="titleExceptSplash">Furever Pets</h1>
-    <div id="dropdown">
-      <select name="selectBreed">
-        <option value="All Breeds">All</option>
-        <option value="Husky">Husky</option>
-        <option value="Dalmation">Dalmation</option>
-        <option value="Great Dane">Great Dane</option>
-        <option value="German Shepherd">German Shepherd</option>
-        <option value="Jack Russell">Jack Russell</option>
-      </select>
-    </div>
-    <div class="navigation">
-      <a id="homeLink" href="#home">Home</a> |
-      <a id="breedsLink" href="#selectBreeds">Search Breeds</a>
+    <div class="row" id="navBar">
+      <div class="col-md-4">
+        <h1 id="titleExceptSplash">Furever Pets</h1>
+      </div>
+      <div class="col-md-4">
+        <select name="selectBreed" id="dropdown">
+          <option value="All Breeds">All</option>
+          <option value="Husky">Husky</option>
+          <option value="Dalmation">Dalmation</option>
+          <option value="Great Dane">Great Dane</option>
+          <option value="German Shepherd">German Shepherd</option>
+          <option value="Jack Russell">Jack Russell</option>
+        </select>
+      </div>
+      <div class="navigation col-md-4">
+        <a id="homeLink" href="#home">Home</a> |
+        <a id="breedsLink" href="#selectBreeds">Search Breeds</a>
+      </div>
     </div>
 
     <section id="splashPage">
@@ -45,19 +49,25 @@
     </section>
 
     <section id="selectBreeds">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="./css/images/dal1.jpg" alt="dalmation picture" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./css/images/dal1.jpg" alt="dalmation picture" />
+          </div>
+          <div class="col-sm-4">
+            <img src="./css/images/dal2.jpg" alt="dalmation picture" />
+          </div>
+          <div class="col-sm-4">
+            <img src="./css/images/dal3.jpg" alt="dalmation picture" />
+          </div>
+          <div class="col-sm-4">
+            <img src="./css/images/dal4.jpg" alt="dalmation picture" />
+          </div>
+          <div class="col-sm-4">
+            <img src="./css/images/dal5.jpg" alt="dalmation picture" />
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="./css/images/dal2.jpeg" alt="dalmation picture" />
-        </div>
-        <div class="col-md-4">
-          <img src="./css/images/dal3.jpg" alt="dalmation picture" />
-        </div>
-        <div class="col-md-4">
-          <img src="./css/images/dal4.jpg" alt="dalmation picture" />
-        </div>
+      </div>
     </section>
 
     <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
