@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-  let dropDown = $('#dropdown');
-  let dals = $('#dalmations');
-  let shepherds = $('#germanShepherds');
-
   $('#titleExceptSplash').hide();
   $('.navigation').hide();
   $('#dropdown').hide();

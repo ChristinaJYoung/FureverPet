@@ -3,11 +3,12 @@ body {
 	font-family: Arial;
 	width: 98%;
 	height: 100%;
+	color:  #98FF98;
 	background-color: #3B3131;
 }
 
 h1 {
-  color: lightgreen;
+  color: #FFFFCC;
   font-size: 50px;
 }
 
@@ -97,10 +98,22 @@ h1 {
   animation-duration: 1s;
 }
 
-#home select {
+/*Animation Scale Up*/
+
+.scaleUp {
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+/*dropdown styles*/
+/*#home select {
   margin-top: 5px;
   margin-left: 50px;
-}
+}*/
 
 
 /*Typing Animation*/
@@ -151,6 +164,16 @@ span{
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+  }
+
+  100% {
+    transform: scale(auto);
+  }
 }
 
 @keyframes slideInFromTop {
