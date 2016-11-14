@@ -15,8 +15,8 @@ $(document).ready(function () {
   });
 
   /* WayPoint code */
+  var slide2 = document.getElementById('slide2');
 
-  var slide3 = document.getElementById('slide3');
   /* Instantiate Waypoint class*/
   var waypoint = new Waypoint({
     element: slide2,
@@ -30,6 +30,7 @@ $(document).ready(function () {
 
   })
   /* Instantiate Waypoint class*/
+  var slide3 = document.getElementById('slide3');
   var waypoint = new Waypoint({
       element: slide3,
       handler: function (direction) {
