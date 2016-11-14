@@ -7,6 +7,13 @@ body {
 	background-color: #3B3131;
 }
 
+#splashPage {
+  margin: 2em auto;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  position: relative;
+}
+
 h1 {
   color: #FFFFCC;
   font-size: 50px;
@@ -33,13 +40,6 @@ h1 {
 .navigation {
 	display: inline;
 	float: right;
-}
-
-#splashPage {
-  margin: 2em auto;
-  text-align: center;
-  font-family: helvetica, arial, sans-serif;
-  position: relative;
 }
 
 #fade-in {
