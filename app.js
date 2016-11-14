@@ -1,9 +1,10 @@
 $(document).ready(function () {
 
   /*jQuery code for smooth scrolling to an anchor */
-  $('a[href^="#"]').on('click', function(event) {
+  $('a[href^="#"]').click(function(event) {
 
       var target = $(this.getAttribute('href'));
+      console.log("TESTING THIS", target)
 
       if( target.length ) {
           event.preventDefault();
@@ -16,6 +17,18 @@ $(document).ready(function () {
   /* WayPoint code */
 
   var slide3 = document.getElementById('slide3');
+  /* Instantiate Waypoint class*/
+  var waypoint = new Waypoint({
+    element: slide2,
+    handler: function (direction) {
+      slide2.classList.add('animate')
+      slide2.classList.add('animate')
+      slide2.classList.add('animate')
+      slide2.classList.add('animate')
+      slide2.classList.add('animate')
+    }
+
+  })
   /* Instantiate Waypoint class*/
   var waypoint = new Waypoint({
       element: slide3,
