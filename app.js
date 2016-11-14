@@ -16,6 +16,7 @@ $(document).ready(function () {
 
   /* WayPoint code */
   var slide2 = document.getElementById('slide2');
+  var slide3 = document.getElementById('slide3');
 
   /* Instantiate Waypoint class*/
   var waypoint = new Waypoint({
@@ -27,10 +28,8 @@ $(document).ready(function () {
       slide2.classList.add('animate')
       slide2.classList.add('animate')
     }
-
   })
-  /* Instantiate Waypoint class*/
-  var slide3 = document.getElementById('slide3');
+
   var waypoint = new Waypoint({
       element: slide3,
       handler: function (direction) {
@@ -40,39 +39,9 @@ $(document).ready(function () {
         slide3.classList.add('animate')
         slide3.classList.add('animate')
       }
-
   })
 
-  // $('#titleExceptSplash').hide();
-  // $('.navigation').hide();
-  // $('#dropdown').hide();
-  //
-  // $('#home').hide();
-  // $('#selectBreeds').hide();
-  //
-  // $('#enterSite').click(function () {
-  //   $('#home').show();
-  //   $('#titleExceptSplash').show();
-  //   $('.navigation').show();
-  //   $('#splashPage').hide();
-  //   $('#selectBreeds').hide();
-  // })
-  // $('#homeLink').click(function () {
-  //   $('#home').show();
-  //   $('#titleExceptSplash').show();
-  //   $('.navigation').show();
-  //   $('#splashPage').hide();
-  //   $('#selectBreeds').hide();
-  // })
-  // $('#breedsLink').click(function () {
-  //   $('#selectBreeds').show();
-  //   $('#titleExceptSplash').show();
-  //   $('#dropdown').show();
-  //   $('.navigation').show();
-  //   $('#home').hide();
-  //   $('#splashPage').hide();
-  // })
-
+  // dropdown box selections hide/show
   $('select').change(function () {
     console.log(this.value)
     if (this.value == 'All Breeds') {
