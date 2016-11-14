@@ -1,34 +1,63 @@
 $(document).ready(function () {
 
-  $('#titleExceptSplash').hide();
-  $('.navigation').hide();
-  $('#dropdown').hide();
+  /*jQuery code for smooth scrolling to an anchor */
+  $('a[href^="#"]').on('click', function(event) {
 
-  $('#home').hide();
-  $('#selectBreeds').hide();
+      var target = $(this.getAttribute('href'));
 
-  $('#enterSite').click(function () {
-    $('#home').show();
-    $('#titleExceptSplash').show();
-    $('.navigation').show();
-    $('#splashPage').hide();
-    $('#selectBreeds').hide();
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 1000);
+      }
+  });
+
+  /* WayPoint code */
+
+  var slide3 = document.getElementById('slide3');
+  /* Instantiate Waypoint class*/
+  var waypoint = new Waypoint({
+      element: slide3,
+      handler: function (direction) {
+        slide3.classList.add('animate')
+        slide3.classList.add('animate')
+        slide3.classList.add('animate')
+        slide3.classList.add('animate')
+        slide3.classList.add('animate')
+      }
+
   })
-  $('#homeLink').click(function () {
-    $('#home').show();
-    $('#titleExceptSplash').show();
-    $('.navigation').show();
-    $('#splashPage').hide();
-    $('#selectBreeds').hide();
-  })
-  $('#breedsLink').click(function () {
-    $('#selectBreeds').show();
-    $('#titleExceptSplash').show();
-    $('#dropdown').show();
-    $('.navigation').show();
-    $('#home').hide();
-    $('#splashPage').hide();
-  })
+
+  // $('#titleExceptSplash').hide();
+  // $('.navigation').hide();
+  // $('#dropdown').hide();
+  //
+  // $('#home').hide();
+  // $('#selectBreeds').hide();
+  //
+  // $('#enterSite').click(function () {
+  //   $('#home').show();
+  //   $('#titleExceptSplash').show();
+  //   $('.navigation').show();
+  //   $('#splashPage').hide();
+  //   $('#selectBreeds').hide();
+  // })
+  // $('#homeLink').click(function () {
+  //   $('#home').show();
+  //   $('#titleExceptSplash').show();
+  //   $('.navigation').show();
+  //   $('#splashPage').hide();
+  //   $('#selectBreeds').hide();
+  // })
+  // $('#breedsLink').click(function () {
+  //   $('#selectBreeds').show();
+  //   $('#titleExceptSplash').show();
+  //   $('#dropdown').show();
+  //   $('.navigation').show();
+  //   $('#home').hide();
+  //   $('#splashPage').hide();
+  // })
 
   $('select').change(function () {
     console.log(this.value)

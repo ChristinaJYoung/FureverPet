@@ -7,6 +7,53 @@ body {
 	background-color: #3B3131;
 }
 
+/*for waypoints*/
+section {
+	width: 50vw;
+	height: 100vh;
+	padding-top: 2em;
+}
+
+.animate .slide3_body_tag {
+	animation-name: body_tag;
+	animation-duration: 4s;
+}
+
+/*for slide1*/
+##slide1 {
+	margin: 0 auto;
+	text-align:center;
+	font-weight: bold;
+	font-size: 3em;
+	position: relative;
+}
+
+/*for slide2*/
+#slide2 {
+	margin: 0 auto;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: bold;
+  position: relative;
+	text-align: center;
+}
+
+/*setting opacity*/
+#slide2 {opacity:0;}
+#slide2.animate {opacity: 1;}
+
+/*for slide3*/
+/*#slide3 {
+	margin: 0 auto;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: bold;
+  position: relative;
+	text-align: center;
+}
+
+/*setting opacity*/
+/*#slide3 {opacity:0;}
+#slide3.animate {opacity: 1;}*/
+
 h1 {
   color: #FFFFCC;
   font-size: 50px;
@@ -174,6 +221,11 @@ span{
   100% {
     transform: scale(auto);
   }
+}
+
+@keyframes body_tag {
+0% {top: 5em; visibility: visible; opacity: 0;}
+100% {top: 0; opacity: 1; }
 }
 
 @keyframes slideInFromTop {
