@@ -51,73 +51,23 @@ section {
 #slide3 {opacity:0;}
 #slide3.animate {opacity: 1;}
 
+#searchButton {
+	color: #000;
+}
+
 h1 {
   color: #FFFFCC;
   font-size: 50px;
-}
-
-.row {
-	padding: 20px;
 }
 
 .col-md-4 {
 	margin-top: 20px;
 }
 
-#fade-in {
+.fade-in {
   opacity: 0;
-  animation-name: fadeIn;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 0.7s;
-  animation-duration: 1s;
 }
 
-/*Dalmation Animations Fade in sequentially*/
-#fade-in1 {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 0.4s;
-  animation-duration: 1s;
-}
-
-#fade-in2 {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 0.8s;
-  animation-duration: 1s;
-}
-
-#fade-in3 {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 1.2s;
-  animation-duration: 1s;
-}
-
-#fade-in4 {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 1.6s;
-  animation-duration: 1s;
-}
-
-#fade-in5 {
-  opacity: 0;
-  animation-name: fadeIn;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 2.0s;
-  animation-duration: 1s;
-}
 
 /*Animation Scale Up*/
 
@@ -131,14 +81,13 @@ h1 {
 }
 
 /*dropdown styles*/
-/*#home select {
-  margin-top: 5px;
-  margin-left: 50px;
-}*/
+select {
+	color: #000;
+}
 
 
 /*Typing Animation*/
-.testing{
+#typePoem{
   font-family: "Courier";
   font-size: 20px;
   margin: 10px 0 0 10px;
@@ -155,6 +104,9 @@ h1 {
 	animation-duration: 4s;
 	animation-timing-function: steps(60, end);
 }
+
+/*#textHolder {with:400px;padding:100px;font-family:arial;font-size:40px;}
+#typePoem {float:left;}*/
 
 span{
   animation: blink;
@@ -180,11 +132,6 @@ span{
 
 ::selection{
   background: black;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
 }
 
 @keyframes stretch {

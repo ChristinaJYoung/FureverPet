@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   /*jQuery code for smooth scrolling to an anchor */
   $('a[href^="#"]').click(function(event) {
 
@@ -40,6 +39,23 @@ $(document).ready(function () {
         slide3.classList.add('animate')
       }
   })
+
+  let $el = $('.fade-in'),
+  $fadeIn1 = $('#fade-in1'),
+  $fadeIn2 = $('#fade-in2'),
+  $fadeIn3 = $('#fade-in3'),
+  $fadeIn4 = $('#fade-in4'),
+  $fadeIn5 = $('#fade-in5'),
+  duration = 5,
+  from = { opacity: 0},
+  to = { opacity: 1 };
+
+  TweenMax.fromTo($el, duration, from, to);
+  TweenMax.fromTo($fadeIn1, duration, from, to);
+  TweenMax.fromTo($fadeIn2, duration, from, to);
+  TweenMax.fromTo($fadeIn3, duration, from, to);
+  TweenMax.fromTo($fadeIn4, duration, from, to);
+  TweenMax.fromTo($fadeIn5, duration, from, to);
 
   // dropdown box selections hide/show
   $('select').change(function () {

@@ -30,11 +30,11 @@
       </div> -->
 
     <section id="slide1">
-      <div id="fade-in">
+      <div class="fade-in">
         <h1>Furever Pets</h1>
       </div>
-      <div>
-        <h2 class="testing">"I'm a forever pet, not an 'until' pet"<span>|</span></h2>
+      <div id="textHolder">
+        <h2 id="typePoem">"I'm a forever pet, not an 'until' pet"<span>|</span></h2>
       </div>
       <div>
         <a id="enterSite" href="#slide2">Enter Site</a>
@@ -44,7 +44,7 @@
 
     <section id="slide2">
       <h2>About Us</h2>
-      <div id="fade-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.:)</div>
+      <div class="fade-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.:)</div>
       <div>
         <a id="Find Your Dog" href="#slide3">Find Your Dog</a>
       </div>
@@ -53,7 +53,7 @@
     <section id="slide3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-4">
             <select name="selectBreed" id="dropdown">
               <option value="All Breeds">All</option>
               <option value="Husky">Husky</option>
@@ -63,81 +63,90 @@
               <option value="Jack Russells">Jack Russell</option>
             </select>
           </div>
+          <div class="col-md-4">
+            <input type="text" ng-model="usersZipCode" id="search" placeholder="Enter your zipcode..." class="col s4 offset-s1">
+          </div>
+          <div class="col-md-4">
+            <!-- class="waves-effect waves-light btn-floating teal btn" -->
+            <button id="searchButton" ng-click="searchForLocation()">search</button>
+              <!-- <i class="material-icons"></i> -->
+          </div>
           <div id="dalmations">
-            <div class="col-md-4" id="fade-in1">
+            <div class="col-md-4 fade-in">
               <img src="./css/images/dal1.jpg" alt="dalmation picture" />
             </div>
-            <div class="col-md-4" id="fade-in2">
+            <div class="col-md-4 fade-in">
               <img src="./css/images/dal2.jpg" alt="dalmation picture" />
             </div>
-            <div class="col-md-4" id="fade-in3">
+            <div class="col-md-4 fade-in">
               <img src="./css/images/dal3.jpg" alt="dalmation picture" />
             </div>
-            <div class="col-md-4" id="fade-in4">
+            <div class="col-md-4 fade-in">
               <img src="./css/images/dal4.jpg" alt="dalmation picture" />
             </div>
-            <div class="col-md-4" id="fade-in5">
+            <div class="col-md-4 fade-in">
               <img src="./css/images/dal5.jpg" alt="dalmation picture" />
             </div>
           </div>
 
           <div id="greatDanes">
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/greatDane1.jpg" alt="dalmation picture" />
+              <img src="./css/images/greatDane1.jpg" alt="Great Dane picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/greatDane2.jpg" alt="dalmation picture" />
+              <img src="./css/images/greatDane2.jpg" alt="Great Dane picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/greatDane3.png" alt="dalmation picture" />
+              <img src="./css/images/greatDane3.png" alt="Great Dane picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/greatDane4.jpg" alt="dalmation picture" />
+              <img src="./css/images/greatDane4.jpg" alt="Great Dane picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/greatDane5.jpg" alt="dalmation picture" />
+              <img src="./css/images/greatDane5.jpg" alt="Great Dane picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/greatDane6.jpg" alt="dalmation picture" />
+              <img src="./css/images/greatDane6.jpg" alt="Great Dane picture" />
             </div>
           </div>
 
           <div id="germanSheps">
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep1.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep1.jpg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep2.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep2.jpg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep3.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep3.jpg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep4.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep4.jpg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep5.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep5.jpg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep6.jpeg" alt="dalmation picture" />
+              <img src="./css/images/germanShep6.jpeg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep7.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep7.jpg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep8.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep8.jpg" alt="German Shepherds picture" />
             </div>
             <div class="col-md-4 scaleUp">
-              <img src="./css/images/germanShep9.jpg" alt="dalmation picture" />
+              <img src="./css/images/germanShep9.jpg" alt="German Shepherds picture" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 
   </body>
